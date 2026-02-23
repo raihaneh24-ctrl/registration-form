@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration  Form</title>
+    <style>
+        body{
+            background-color: #cfcfcf;
+        }
+        .container{
+            width: 650px;
+            margin: 60px auto;
+            background-color: #d9d9d9;
+            border: 2px solid #a6a6a6;
+            padding: 40px;
+        }
+        h2 {
+            text-align: center;
+            text-decoration: underline;
+            margin-bottom: 30px;
+
+        }
+        .form-group {
+            margin-bottom: 18px;
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        input[type="number"],
+        textarea {
+            width: 300px;
+            padding: 6px;
+            background-color: #f2f2f2;
+            border: 1px solid #999;
+        }
+        textarea {
+            height: 90px;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 25px;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 6px 18px;
+            background-color: #e6e6e6;
+            border: 1px solid #999;
+            cursor: pointer;
+
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #d0d0d0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form action="submit.html" metod="Get">
+            <div class="form-group">
+                <label>First Name</label>
+                <input type="text" name="firstname">
+            </div>
+            <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" name="lastname">
+            </div>
+            <div class="form-group">
+                <label>Nick Name</label>
+                <input type="text" name="nickname">
+            </div>
+            <div class="form-group">
+                <label>e-mail</label>
+                <input type="email" name="email">
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" name="password">
+            </div>
+            <div class="form-group">
+                <label>Date of Birth</label>
+                <input type="date" name="date">
+            </div>
+            <div class="form-group">
+                <label>Gender</label>
+                <input type="radio" name="gender">Male
+                <input type="radio" name="gender">female
+                <input type="radio" name="gender">Others
+            </div>
+            <div class="form-group">
+                <label>Mobile</label>
+                <input type="number" name="mobile">
+            </div>
+            <div class="form-group">
+                <label>Address</label>
+                <textarea name="address"></textarea>
+            </div>
+            <div class="buttons">
+                <input type="submit" value="submit">
+                <input type="reset" value="reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
